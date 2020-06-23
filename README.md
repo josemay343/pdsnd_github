@@ -2,10 +2,10 @@
 06/23/2020
 
 ### Project Title
-Replace the Project Title
+Explore US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+This program explores data provided by Motivate, Inc to determine bikeshare usage analytics throughout three major US cities, Chicago, Washington DC., and New York.
 
 ### Files used
 Include the files used

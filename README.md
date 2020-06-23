@@ -8,8 +8,14 @@ Explore US Bikeshare Data
 This program explores data provided by Motivate, Inc to determine bikeshare usage analytics throughout three major US cities, Chicago, Washington DC., and New York.
 
 ### Files used
-Include the files used
+bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://www.udacity.com
+https://pandas.pydata.org
+https://stackoverflow.com
+https://www.geeksforgeeks.org
 

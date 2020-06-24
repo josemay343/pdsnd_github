@@ -287,6 +287,7 @@ def raw_data_view(df):
                 break
 
 def basic_stats(df):
+    """ Displays descriptive statistics from the User's filtered dataframe"""
     while True:
         answer = input('Would you like to view general statistical data based on the given filters? Enter yes or no.\n')
         if answer not in ('yes','no'):

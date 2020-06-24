@@ -264,15 +264,15 @@ def raw_data_view(df):
     end = 5
     while True:
         if count == 0:
-            raw_data = input("\nWould you like to see 5 lines of the raw data based on the given filters? Please enter Yes or No.\n").lower()
-            if raw_data not in ('yes','no'):
+            raw_data_choice = input("\nWould you like to see 5 lines of the raw data based on the given filters? Please enter Yes or No.\n").lower()
+            if raw_data_choice not in ('yes','no'):
                 print('Please enter yes or no only\n')
-            elif raw_data == 'yes':
+            elif raw_data_choice == 'yes':
                 count += 1
                 print(df.iloc[start:end])
                 start += 5
                 end += 5 
-            elif raw_data == 'no':
+            elif raw_data_choice == 'no':
                 break
         elif count == 1:
             raw_data_next = input("\nWould you like to see the next 5 lines of the raw data based on the given filters?. Please enter Yes or No.\n").lower()

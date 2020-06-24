@@ -27,22 +27,22 @@ def get_filters():
 
     #selects the correct filter per what was passed by the user.
     while True:
-        filter_option = input('\nWould you like to filter by month, day, both, or none?(not case sensitive)\n').lower()
-        if filter_option not in('month','day','both','none'):
+        filter_choice = input('\nWould you like to filter by month, day, both, or none?(not case sensitive)\n').lower()
+        if filter_choice not in('month','day','both','none'):
             print('\nPlease enter a valid option. (not case sensitive)')
-        elif filter_option == 'both':
+        elif filter_choice == 'both':
             month = get_month()
             day = get_day()
             break
-        elif filter_option == 'month':
+        elif filter_choice == 'month':
             month = get_month()
             day = 'all'
             break
-        elif filter_option == 'day':
+        elif filter_choice == 'day':
             day = get_day()
             month = 'all'
             break
-        elif filter_option == 'none':
+        elif filter_choice == 'none':
             month = 'all'
             day = 'all'
             break

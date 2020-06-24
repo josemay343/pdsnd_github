@@ -1,5 +1,4 @@
 import time
-import datetime
 import pandas as pd
 import numpy as np
 
@@ -28,22 +27,22 @@ def get_filters():
 
     #selects the correct filter per what was passed by the user.
     while True:
-        filter_option = input('\nWould you like to filter by month, day, both, or none?(not case sensitive)\n').lower()
-        if filter_option not in('month','day','both','none'):
+        filter_choice = input('\nWould you like to filter by month, day, both, or none?(not case sensitive)\n').lower()
+        if filter_choice not in('month','day','both','none'):
             print('\nPlease enter a valid option. (not case sensitive)')
-        elif filter_option == 'both':
+        elif filter_choice == 'both':
             month = get_month()
             day = get_day()
             break
-        elif filter_option == 'month':
+        elif filter_choice == 'month':
             month = get_month()
             day = 'all'
             break
-        elif filter_option == 'day':
+        elif filter_choice == 'day':
             day = get_day()
             month = 'all'
             break
-        elif filter_option == 'none':
+        elif filter_choice == 'none':
             month = 'all'
             day = 'all'
             break
@@ -265,15 +264,15 @@ def raw_data_view(df):
     end = 5
     while True:
         if count == 0:
-            raw_data = input("\nWould you like to see 5 lines of the raw data based on the given filters? Please enter Yes or No.\n").lower()
-            if raw_data not in ('yes','no'):
+            raw_data_choice = input("\nWould you like to see 5 lines of the raw data based on the given filters? Please enter Yes or No.\n").lower()
+            if raw_data_choice not in ('yes','no'):
                 print('Please enter yes or no only\n')
-            elif raw_data == 'yes':
+            elif raw_data_choice == 'yes':
                 count += 1
                 print(df.iloc[start:end])
                 start += 5
                 end += 5 
-            elif raw_data == 'no':
+            elif raw_data_choice == 'no':
                 break
         elif count == 1:
             raw_data_next = input("\nWould you like to see the next 5 lines of the raw data based on the given filters?. Please enter Yes or No.\n").lower()
